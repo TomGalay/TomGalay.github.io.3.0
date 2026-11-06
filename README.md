@@ -1,10 +1,10 @@
-# Isaiah Thomas Galay — Spec Sheet Résumé
+# Isaiah Thomas Galay — Portfolio 3.0 (Blueprint Archive)
 
 A creative developer résumé built as an **interactive engineering spec sheet**: blueprint grid, CAD crosshair cursor, a 3D isometric model of the system layers Isaiah builds, a horizontal career-traverse timeline, project showcases framed as phones and browser windows, and awards rendered as rubber stamps.
 
 Built with **React + Vite + Framer Motion + simple-icons**. No UI framework, no component library — one hand-rolled design system in `src/index.css`.
 
-Live at **https://tomgalay.github.io/** (user GitHub Pages site, auto-deployed from `main`).
+Preserved blueprint edition of the portfolio. Archive deployment target: **https://tomgalay.github.io/TomGalay.github.io.3.0/**, after the GitHub repository is renamed to `TomGalay.github.io.3.0` and deployed. The root site address is reserved for the next portfolio.
 
 ## Quick start
 
@@ -88,8 +88,8 @@ Design tokens (colors, fonts, lines) are the CSS custom properties at the top of
 
 ## Deployment
 
-The site publishes to the **user GitHub Pages** site `https://tomgalay.github.io/` from the repo `TomGalay/tomgalay.github.io` (this repo was renamed from `Portfolio`).
+This edition is prepared for the **project GitHub Pages** site `https://tomgalay.github.io/TomGalay.github.io.3.0/` from the intended archive repo `TomGalay/TomGalay.github.io.3.0`. It previously served the root site from `TomGalay/tomgalay.github.io`, originally named `Portfolio`.
 
-- `.github/workflows/deploy.yml` builds with Vite (`base: "/"` — absolute paths, correct for a user site) on every push to `main`, then publishes via `actions/upload-pages-artifact` + `actions/deploy-pages`.
+- `.github/workflows/deploy.yml` builds with Vite (`base: "/TomGalay.github.io.3.0/"`) on every push to `main`, then publishes via `actions/upload-pages-artifact` + `actions/deploy-pages`. Project screenshots and certification logos use `import.meta.env.BASE_URL` so they resolve under the archive path.
 - Repo **Settings → Pages → Source** must be set to **GitHub Actions**.
 - `npm run build` outputs a static `dist/` — the same artifact could be deployed to any static host (Netlify, Vercel, S3); no server runtime required.

@@ -6,6 +6,8 @@ Instructions for AI coding agents working in this repository.
 
 Creative developer résumé for **Isaiah Thomas Galay**, styled as an interactive engineering spec sheet (blueprint aesthetic). React 18 + Vite 5 + Framer Motion 11. No TypeScript, no UI library, no test framework — one global stylesheet.
 
+This is the preserved Portfolio 3.0 blueprint edition, prepared for repository `TomGalay.github.io.3.0` and GitHub Pages base `/TomGalay.github.io.3.0/`. Keep this design intact; the next portfolio belongs in a separate project. Public asset paths in `src/data.js` must use `import.meta.env.BASE_URL`.
+
 ## Commands
 
 ```bash
